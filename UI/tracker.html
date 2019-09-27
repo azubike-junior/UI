@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../tracker.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ---------------------navbar section---------------------------------- -->
+    <nav class="navbar">
+        <div class="nav_center">
+            <a href="/UI/index.html">
+                <h2 class="nav-title">SendIT</h2>
+            </a>
+            <div class="nav_ul">
+                <ul class="nav_links">
+                    <li class="nav_link"><a href="#">Quote</a></li>
+                    <li class="nav_link"><a href="/UI/tracker.html">Track a parcel</a></li>
+                    <li class="nav_link"><a href="#">Shipping</a></li>
+                    <li class="nav_link"><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="admins">
+                <a href="/UI/login.html"><span class="login">Login</span></a>
+                <a href="/UI/signup.html"><span class="signup">Sign Up</span></a>
+
+            </div>
+        </div>
+        <a href="#"><span class="basket">Basket</span></a>
+        <span><i class="fa fa-shopping-basket"></i></span>
+        <div class="bask_num">(0)</div>
+    </nav>
+    <!-- --------------------- end of navbar section---------------------------------- -->
+
+    <!-- ---------------------------tracking section---------------------------- -->
+    <section class="tracker-session">
+        <div class="tracker-container">
+            <div class="trackerdiv">
+                <h2 class="tracker-title">track your parcel</h2>
+                <h5 class="tracker-para">You can track your parcel delivery and find your item's <br>
+                    current whereabouts
+                    with the quick and
+                    simple
+                    SendIT tracking tool.</h5>
+            </div>
+            <div class="trackingtool">
+                <h4 class="tracker-title2">enter your tracking reference:</h4>
+                <div class="tracking-box">
+                    <input type="text" class="tracker-box" placeholder="e.g WQG3425789">
+                    <input type="button" class="tracker-btn" value="track this parcel">
+                </div>
+            </div>
+            <div class="mapper">
+            <span id="map"></span>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-----------------------------first footer----------------------------->
+    <section class="firstfooter">
+        <div class="firstfooters">
+            <div class="heading">
+                <h3 class="sendingparcel">Send a parcel</h3>
+                <span class="itemOne"><a href="#">make a shipment</a></span>
+                <span class="itemOne"><a href="#">Get a quote</a></span>
+                <span class="itemOne"><a href="#">My Account</a></span>
+
+            </div>
+            <div class="heading">
+                <h3 class="sendingparcel">Deliver a parcel</h3>
+                <span class="itemOne"><a href="#">Tracking shipments</a></span>
+                <span class="itemOne"><a href="#">cancel delivery</a></span>
+                <span class="itemOne"><a href="#">change destination of delivery</a></span>
+                <span class="itemOne"><a href="#">FAQs</a></span>
+            </div>
+            <div class="heading">
+                <h3 class="sendingparcel">About Us</h3>
+                <span class="itemOne"><a href="#">Our Company</a></span>
+                <span class="itemOne"><a href="#">Contact Us</a></span>
+                <span class="itemOne"><a href="#">Service</a></span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-----------------------------end of first footer----------------------------->
+    <!-----------------------------footer----------------------------->
+    <section class="footer">
+        <div class="footers">
+            <span><a href="" footer class="footerItem">private policy</a></span>
+            <span><a href="" class="footerItem">cookie policy</a></span>
+            <span><a href="" class="footerItem">Terms and condition</a></span>
+            <span><a href="" class="footerItem">refund policy</a></span>
+            <span><a href="" class="footerItem">sitemap</a></span>
+        </div>
+        <h4 class="address">Third Floor, The Union, Albert Square, Manchester M2 6LW</h4>
+    </section>
+    <!-----------------------------end footer----------------------------->
+    <script>
+        function initMap() {
+            var location = {lat: 9.081999,lng: 8.675277}
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({position:location, map: map});
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv8h9WGhpoWAdaAXwY8r1Qz16ufMTezYo&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
