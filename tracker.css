@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Kreon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo|Kreon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --lightblue: #afd3f5;
+    --blue: #1b4cee;
+    --orange: #f3b82d;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.5s ease-in-out;
+}
+
+/* ***************navbar ********************* */
+.navbar {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: #fff;
+    z-index: 5;
+}
+
+.nav_center a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav_center {
+    padding: 2rem;
+}
+
+.nav-title {
+    padding: 0;
+    float: left;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-top: -0.7rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 4rem;
+}
+
+.nav_ul {
+    margin: 0;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around
+}
+
+.nav_link {
+    margin-top: -0.3rem;
+    padding: 0 1.7rem;
+    text-align: center;
+}
+
+.nav_links a {
+    color: var(--black);
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.admins {
+    margin-top: -2.5rem;
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+
+}
+
+.login {
+    border: solid 1px var(--blue);
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 1px 3px 5px 1px #cecece;
+}
+
+.login a {
+    color: #fff;
+}
+
+.login:hover {
+    background: var(--blue);
+    color: white;
+    outline: none;
+}
+
+.signup {
+    border: solid 1px var(--blue);
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 1px 3px 5px 1px #cecece;
+}
+
+.signup a {
+    color: var(--blue);
+}
+
+.signup:hover {
+    background: var(--blue);
+    color: white;
+    outline: none;
+}
+
+
+.basket {
+    position: absolute;
+    background: #eceaea;
+    right: 0%;
+    margin: 0 3rem;
+    padding: 0.5rem 2rem;
+    border: solid 1px var(--blue);
+    border-radius: 0.5rem;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    box-shadow: 1px 3px 5px 1px #cecece;
+}
+
+.basket:hover {
+    background: var(--orange);
+    color: #ffffff;
+}
+
+.basket a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.bask_num {
+    position: absolute;
+    top: 5.5rem;
+    right: 3.5rem;
+    color: var(--blue);
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fa {
+    padding-left: -2;
+    font-size: 1rem;
+    position: absolute;
+    top: 5.8rem;
+    right: 9.1rem;
+    color: var(--blue);
+}
+
+/* *************** end of navbar ********************* */
+
+/* ********************tracker section********************************* */
+.tracker-session{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: #013f7e;
+}
+.tracker-container{
+    padding: 20px;
+    margin:40px
+}
+.trackerdiv{
+    padding: 20px;
+}
+.tracker-title{
+   font-family: 'Quicksand', sans-serif; 
+   color:#ffffff;
+   text-transform: capitalize;
+}
+.tracker-para{
+    font-family:'Quicksand', sans-serif; 
+    padding: 10px;
+    color: #f3b82d;
+    z-index: 3;
+}
+.trackingtool{
+    background: linear-gradient(to right, #1c03b5, #5c8bef);
+    width:30rem;
+    padding: 12px;
+    border-radius: 5rem;
+    box-shadow: 1px 3px 5px 1px #022f5c;
+}
+.tracker-title2 {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    padding: 0 0 0 20px;
+}
+.tracking-box{
+    margin: 10px;
+}
+.tracker-box{
+    padding: 10px;
+    width: 15rem;
+}
+.tracker-btn{
+     border-radius: 0.5rem;
+     padding: 5px;
+     color: var(--black);
+     font-size: 1.2rem;
+     font-family: 'Quicksand',sans-serif;
+     box-shadow: 1px 3px 5px 1px #013f7e;
+     outline: none;
+     border: none;
+}
+#map{
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    top: 0%;
+    height: 70vh;
+    width: 53% ;
+    float:right;
+    margin: 0;
+}
+/* *****************end of tracker section***************************************** */
+/* **********************profile section********************************** */
+.profilesession{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    background: #022f5c;
+    position: relative;
+
+}
+.profile{
+    padding: 2rem;
+}
+.parcelstuffs{
+    padding-right: 20px;
+}
+.parcelstuffs a{
+     padding: 20px;
+     margin:10px;
+     list-style: none;
+     text-decoration: none;
+     text-transform: capitalize;
+     font-family: 'Quicksand', sans-serif;
+     color: #ffffff;
+}
+.fa-sort-down {
+    color: #f3b82d;
+    font-size: 1.2rem;
+}
+.workspace{
+    background: #cecece;
+    width:90%;
+    height: 70vh;
+    margin: 10px;
+    box-shadow: 1px 3px 5px 1px #011b35;
+    border-radius: 1%;
+}
+.orderresponse{
+    text-align: left;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* **********************end of profile section********************************** */
+/***************************Qoute section************************************* */
+.btns{
+    background: #eceaea;
+    
+    
+    
+}
+.btn-view{
+    padding: 0.5rem;
+    margin: 2rem;
+}
+.table-order{
+    background: #eceaea;
+    padding: 0.5rem;
+}
+th{
+    padding: 0.5rem;
+}
+
+/***************************end of Qoute section************************************* */
+
+/*******************first footer**************************** */
+.firstfooter {
+    width: 100%;
+    height: 45vh;
+    margin: 2rem auto 0 auto;
+    background: #f3efef;
+}
+
+.firstfooters {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.sendingparcel {
+    color: #013f7e;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 3px;
+}
+
+.heading {
+    display: block;
+}
+
+.firstfooters a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.itemOne {
+    display: block;
+    padding: 10px;
+}
+
+.itemOne a {
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.itemOne a:hover {
+    color: #013f7e;
+    font-weight: bold;
+}
+
+/*******************end of first footer**************************** */
+
+/****************************footer********************************* */
+.footer {
+    background: #a19e9e;
+}
+
+.footers {
+    padding: 10px;
+    text-align: center;
+}
+
+.footerItem {
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.address {
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-family: 'Quicksand', sans-serif;
+}

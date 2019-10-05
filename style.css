@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css?family=Kreon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo|Kreon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --lightblue: #afd3f5;
+    --blue: #1b4cee;
+    --orange: #f3b82d;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.5s ease-in-out;
+}
+/* ***************navbar ********************* */
+.navbar {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background:#fff;
+    z-index: 5;
+}
+.nav_center a{
+    list-style: none;
+    text-decoration: none;
+}
+.nav_center{
+    padding: 2rem;
+}
+.nav-title{
+    padding: 0;
+    float: left;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-top: -0.7rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 4rem;
+}
+.nav_ul{
+     margin: 0;
+     width: 80%;
+     align-items: center;
+     align-content: center;
+     text-align: center;
+     justify-content: space-around
+}
+.nav_link{
+    margin-top: -0.3rem;
+    padding:0 1.7rem;
+    text-align: center;
+}
+
+.nav_links a{
+     color: var(--black);
+     font-size: 1rem;
+     font-family: 'Quicksand', sans-serif;
+     
+}
+.admins{
+    margin-top: -2.5rem;
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    padding:1rem;
+   
+}
+.login{
+    border: solid 1px var(--blue);
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 1px 3px 5px 1px #cecece;
+}
+.login a{
+    color: #fff;
+}
+.login:hover{
+    background: var(--blue);
+    color: white;
+    outline: none;
+}
+.signup {
+    border: solid 1px var(--blue);
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 1px 3px 5px 1px #cecece;
+}
+.signup a{
+    color: var(--blue);
+}
+.signup:hover{
+    background: var(--blue);
+    color: white;
+    outline: none;
+}
+
+
+.basket{
+    position: absolute;
+    background: #eceaea;
+    right: 0%;
+    margin:0 3rem;
+    padding: 0.5rem 2rem;
+    border: solid 1px var(--blue);
+    border-radius: 0.5rem;
+    color: var(--black);
+    font-size:1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    box-shadow: 1px 3px 5px 1px #cecece;
+}
+.basket:hover{
+    background: var(--orange);
+    color: #ffffff;
+}
+.basket a{
+    text-decoration: none;
+    list-style: none; 
+   
+}
+.bask_num{
+    position: absolute;
+    top: 5.5rem;
+    right: 3.5rem;
+    color: var(--blue);
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.fa{
+    padding-left: -2;
+    font-size: 1rem;
+    position: absolute;
+    top: 5.8rem;
+    right: 9.1rem;
+    color: var(--blue);
+}
+/* *************** end of navbar ********************* */
+
+/* *************** banner section ********************* */
+.banner_section{
+    min-height: calc(100vh);
+    width: 100%;
+    background: url(img/parcel1.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    background: #013f7e;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 2.5rem 3rem;
+    margin-top: 10rem;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+}
+label{
+    color: var(--orange);
+    font-family: 'Quicksand', sans-serif;
+}
+.place{
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    
+}
+.postcode{
+    padding: 0.5rem;
+    width: 80px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+.to{
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+.length{
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+.width{
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+.height{
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+.cm{
+    padding: 0.5rem;
+    width: 80px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+.weight{
+    padding: 0.5rem;
+    width: 80px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+.get_quote a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+    padding: 0.5rem;
+    font-family: 'Quicksand', sans-serif;
+    background: #eceaea;
+}
+.get_quote a:hover{
+    background: var(--orange);
+    color: #ffffff;
+}
+/* *************** banner section ********************* */
+
+/* *************** connections ********************* */
+.connection{
+    width: 100%;
+    height:48vh;
+    background: #ffffff;
+}
+.connect{
+    text-align: center;
+    padding: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+}
+.bold{
+    color: var(--blue)
+}
+.connect h6{
+    padding: 10px;
+    text-transform: capitalize;
+    color: #908c8c;
+    font-size: 0.7rem;
+}
+.connect_with{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2rem;
+}
+.connect-icons{
+    padding: 10px;
+    text-align: center;
+}
+.connect-icons {
+     list-style: none;
+     text-decoration: none;
+     margin-top: 15px;
+}
+.icon a{
+     color:#ffffff;
+}
+
+.icon{
+    border-radius: 30px;
+    padding:15px;
+    font-size:1.5rem;
+    background: #cecece;
+}
+.icon:hover{
+    background: var(--blue);
+}
+/* *************** end of connections ********************* */
+
+/* *************** newsletter ********************* */
+.newsletter-section{
+    width: 80%;
+    height: 30vh;
+    background-color:#013f7e;
+    margin: 1rem auto;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+.newsletter{
+    text-align: center;
+    position: relative;
+}
+.letter{
+    padding: 35px 0 15px 0px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+.letter h3 {
+     box-shadow: 1px 3px 3px 1px #a7a5a5;
+}
+.enter-email{
+    padding: 15px 50px;
+    font-size: 1rem;
+    box-shadow: 1px 3px 3px 1px #a7a5a5;
+    border: none;
+    outline: none;
+    border-radius:20px;
+}
+.btn{
+    background: linear-gradient(to right, #1c03b5, #5c8bef);
+    padding: 10px;
+    outline: none;
+    color: #ffffff;
+    top:65%;
+    right: 36%;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+/* *************** end of newsletter********************* */
+/*******************first footer**************************** */
+.firstfooter{
+    width: 100%;
+    height:45vh;
+    margin:2rem auto 0 auto;
+    background: #f3efef;
+}
+.firstfooters{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.sendingparcel{
+    color:#013f7e;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 3px;
+}
+.heading {
+    display: block;
+}
+.firstfooters a{
+    text-decoration: none;
+    list-style: none;
+}   
+.itemOne{
+    display: block;
+    padding: 10px;
+}
+.itemOne a{
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+}
+.itemOne a:hover{
+    color:#013f7e;
+    font-weight: bold;
+}
+/*******************end of first footer**************************** */
+
+/****************************footer********************************* */
+.footer{
+    background: #a19e9e;
+}
+.footers{
+    padding: 10px;
+    text-align: center;
+}
+.footerItem{
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.address{
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* **********Login page************** */
+.loginpage{
+    height: 70vh;
+    width: 100%;
+}
+.session{
+    margin: 2.5rem 0 1rem 0;
+}
+.signupShortcut{
+    width:40%;
+    float: left;
+    background: linear-gradient(to right, #1c03b5, #5c8bef);
+    height: 70vh;
+    padding: 10rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.loginsession{
+    width: 60%;
+    float:right;
+    background: #e4e2e2;
+    height: 70vh;
+}
+.signuptitle a{
+   text-decoration: none;
+   list-style: none;
+   color: #ffffff;
+   font-family: 'Quicksand', sans-serif;
+   background: #e78606;
+   padding: 7px;
+   border-radius: 10%;
+   text-transform: uppercase;
+   box-shadow: 1px 3px 3px 1px #013f7e;
+}
+.loginform{
+     margin: auto;
+     padding: 5rem;
+     text-align: center;
+}
+.login-title{
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+#error{
+    color: #f1310f;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 0 1rem 0;
+}
+.emaildiv{
+    background:white;
+    padding: 10px 22px;
+    border: 0.5px solid #e78606;
+    position: relative;
+    
+}
+#email{
+    padding: 5px;
+    border: none;
+    outline: none;
+    width:40%;
+    margin: 0.6rem 0;
+}
+.env{
+    position: absolute;
+    top: 36%;
+    left: 2%;
+    color: #908c8c;
+}
+.passworddiv{
+    background:white;
+    padding: 10px 22px;
+    border: 0.5px solid #e78606;
+    position: relative;
+}
+#password{
+     background: #ffffff;
+     padding: 5px;
+     border: none;
+     width:40%;
+     margin: 1.5rem 0;
+     outline: none;
+}
+.key{
+    position: absolute;
+    top: 38%;
+    left: 2%;
+    color: #908c8c;
+}
+.forgetpass{
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    
+}
+.forgetpass a{
+    text-decoration: none;
+}
+.btn-login{
+    padding: 10px 50px;
+    border: none;
+    background: #e78606;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+/********************end of login page******************************** */
+
+/* ********************sign up page*********************************** */
+.signup-form{
+    text-align: center;
+    margin: 40px;
+}
+.signup-title{
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem;
+}
+.input1{
+    padding: 10px;
+    margin: 5px;
+    outline: #e78606;
+    border:  #e78606;
+    border-radius: 15px;
+}
+.signup-btn{
+    padding: 6px;
+    margin: 14px;
+    width: 8rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: #e78606;
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 1px 3px 3px 1px #a19d9d;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
