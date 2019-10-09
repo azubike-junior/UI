@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!----------------------------banner section------------------------------------->
+    <section class="banner_section">
+         <h2 class="header-title"><a href="home.html">SendIT</a></h2>
+        <div class="small-box">
+            <h5 class="small-words">Save time by importing item details and delivery addresses from e-commerce channels,
+                that you'd otherwise have to input manually.</h5>
+                <button class="btn-login"> About us</button>
+        </div>
+        <div class="banner-display">
+            <h2 class="banner-para">If you're looking for cheap parcel delivery, look no further than SendIT.</h2>
+        </div>
+        <div class="banner">
+            <form class="login-form">
+                <h2 class="login-title">log in</h2>
+                <p id="error"></p>
+                <span class="emaildiv">
+                    <span class="env"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" placeholder="email"><br>
+                </span>
+                <span class="passworddiv">
+                    <span class="key"><i class="fas fa-key"></i></span>
+                    <input type="password" placeholder="password" id="password">
+                </span><br>
+                <button class="btn-login">Login</button><br>
+                <span class="forgetpass">are you registered? if not <a href="#" id="reg" >Register</a></span>
+            </form>
+
+            <form class="register-form">
+                <h2 class="register-title">Register</h2>
+                <p id="error"></p>
+                <span class="namediv">
+                    <span class="env"><i class="fas fa-user"></i></span>
+                    <input type="name" id="name" placeholder="name"><br>
+                </span>
+                <span class="emaildiv">
+                    <span class="env"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" placeholder="email"><br>
+                </span>
+                <span class="passworddiv">
+                    <span class="key"><i class="fas fa-key"></i></span>
+                    <input type="password" placeholder="password" id="password">
+                </span><br>
+                <button class="btn-register">Sign Up</button><br>
+                <span class="forgetpass">if registered <a href="#" id="login"> Login</a></span>
+            </form>
+        </div>
+
+    </section>
+    <!----------------------------end of banner section------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function(){
+        $('#reg').on('click',(e)=>{
+            $('.login-form').css('display', 'none');
+            $('.register-form').css('display', 'inline');
+            e.preventDefault()
+        })
+      })
+      $(function(){
+        $('#login').on('click',(e)=>{
+            $('.register-form').css('display', 'none');
+            $('.login-form').css('display', 'inline');
+            e.preventDefault()
+        })
+      })
+    </script>
+</body>
+
+</html>

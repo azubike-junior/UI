@@ -279,21 +279,50 @@ ul {
 /* **********************end of profile section********************************** */
 /***************************Qoute section************************************* */
 .btns{
-    background: #eceaea;
-    
-    
-    
+    margin: 3rem;
 }
 .btn-view{
-    padding: 0.5rem;
-    margin: 2rem;
+    margin: 1rem;
 }
-.table-order{
-    background: #eceaea;
-    padding: 0.5rem;
+table{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    table-layout: fixed;
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
 }
-th{
-    padding: 0.5rem;
+
+table, th{
+    color: var(--orange);
+    font-family: 'Quicksand', sans-serif;
+    border-collapse: collapse;
+    padding: 0.9rem;
+}
+table, td{
+    color: var(--black);
+    padding: 0.4rem;
+    background: #14b6d3;
+    
+}
+table, tr{
+    padding: 0.7rem;
+    color: #cecece;
+    background: linear-gradient(to right, #1c03b5, #5c8bef);
+    
+}
+.cancel{
+    color: #a37508;
+    cursor: pointer;
+}
+.cancel:hover{
+    background:#04a5c2;
+    padding: 0.2rem;
+    border-radius: 3px;
+    box-shadow: 1px 3px 5px 1px #011b35;
+    transition: var(--mainTransition);
 }
 
 /***************************end of Qoute section************************************* */
