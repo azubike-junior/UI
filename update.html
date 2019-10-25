@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="tracker.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <title>Document</title>
+    <title>sendIT | cancel-Oder</title>
 </head>
 
 <body>
@@ -19,50 +19,54 @@
             </a>
             <div class="nav_ul">
                 <ul class="nav_links">
-                    <li class="nav_link"><a href="create_Order.html">create Parcel</a></li>
                     <li class="nav_link"><a href="tracker.html">Track a parcel</a></li>
-                    <li class="nav_link"><a href="dashboard.html">view Orders</a></li>
+                    <li class="nav_link"><a href="create_Order.html">create parcel</a></li>
                 </ul>
             </div>
             <div class="admins">
-                <a href="Usersignin.html"><span class="login">Log out</span></a>
+                 <a href="Usersignin.html"><span class="login">Log out</span></a>
             </div>
         </div>
     </nav>
     <!-- --------------------- end of navbar section---------------------------------- -->
 
-    <!-- ---------------------------tracking section---------------------------- -->
-    <section class="tracker-session">
-        <div class="tracker-container">
-            <div class="trackerdiv">
-                <h2 class="tracker-title">track your parcel</h2>
-                <h5 class="tracker-para">You can track your parcel delivery and find your item's <br>
-                    current whereabouts
-                    with the quick and
-                    simple
-                    SendIT tracking tool.</h5>
-            </div>
-            <div class="trackingtool">
-                <h4 class="tracker-title2">enter your tracking reference:</h4>
-                <div class="tracking-box">
-                    <input type="text" class="tracker-box" placeholder="e.g WQG3425789">
-                    <input type="button" class="tracker-btn" value="track this parcel">
-                </div>
-            </div>
-            <div class="mapper">
-                <span id="map"></span>
-            </div>
+
+    <!----------------------- update parcel section---------------------------------- -->
+    <section class="profilesession">
+        <div class="parcel_action">
+            <h5 class="tag">To cancel a specific Parcel Order click <a href="cancel_oder.html"></a><i
+                    class="far fa-trash-alt"></i></h4>
+                <h5 class="tag">To update a specific Parcel Order destination click <a href="update.html"></a><i
+                        class="fas fa-edit"></i></h4>
+            <h5 class="tag">To check parcel details click <a href="#">Ref no:</a></h4>
+        </div>
+
+        
+        <div class="update_order">
+        <h2>Update this parcel</h2>
+        <form action="" class="update_form">
+            <label for="" class="update_label">New pick up location</label><br>
+            <input type="text" class="newInput" placeholder="enter your pick up location"><br>
+            <label for="" class="update_label">New Destination</label><br>
+            <input type="text" class="newInput" placeholder="enter New Destination"><br>
+            <h4><a href="detail.html" title="check-details">Ref no:</a></h4> <button type="submit"
+                class="updateBtn">update Parcel</button>
+        </form>
         </div>
 
     </section>
+
+
+
+
+
+    <!-- --------------------- update parcel section---------------------------------- -->
 
     <!-----------------------------first footer----------------------------->
     <section class="firstfooter">
         <div class="firstfooters">
             <div class="heading">
                 <h3 class="sendingparcel">Send a parcel</h3>
-                <span class="itemOne"><a href="#">make a shipment</a></span>
-                <span class="itemOne"><a href="#">Get a quote</a></span>
                 <span class="itemOne"><a href="#">My Account</a></span>
 
             </div>
@@ -95,27 +99,6 @@
         <h4 class="address">Third Floor, The Union, Albert Square, Manchester M2 6LW</h4>
     </section>
     <!-----------------------------end footer----------------------------->
-    <script>
-        function initMap() {
-            var location = {
-                lat: 9.081999,
-                lng: 8.675277
-            }
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv8h9WGhpoWAdaAXwY8r1Qz16ufMTezYo&callback=initMap"
-        async defer></script>
 </body>
 
 </html>
-
-
-

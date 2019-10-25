@@ -266,7 +266,7 @@ ul {
     background: #cecece;
     width:90%;
     height: 70vh;
-    margin: 10px;
+    margin-top: 1.5rem;
     box-shadow: 1px 3px 5px 1px #011b35;
     border-radius: 1%;
 }
@@ -277,13 +277,7 @@ ul {
 }
 
 /* **********************end of profile section********************************** */
-/***************************Qoute section************************************* */
-.btns{
-    margin: 3rem;
-}
-.btn-view{
-    margin: 1rem;
-}
+/***************************dashboard section************************************* */
 table{
     width: 80%;
     text-align: center;
@@ -291,12 +285,12 @@ table{
     table-layout: fixed;
     border-radius: 5px;
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 10%;
 }
 
 table, th{
-    color: var(--orange);
+    color: #d89701;
     font-family: 'Quicksand', sans-serif;
     border-collapse: collapse;
     padding: 0.9rem;
@@ -313,19 +307,161 @@ table, tr{
     background: linear-gradient(to right, #1c03b5, #5c8bef);
     
 }
-.cancel{
-    color: #a37508;
+.fa-trash-alt{
     cursor: pointer;
-}
-.cancel:hover{
-    background:#04a5c2;
-    padding: 0.2rem;
-    border-radius: 3px;
-    box-shadow: 1px 3px 5px 1px #011b35;
+    padding: 0 1rem;
+    color: var(--blue);
     transition: var(--mainTransition);
 }
+.fa-trash-alt:hover{
+    font-size: 1.5rem;
+    
+}
+.fa-edit{
+    cursor: pointer;
+    padding: 0 1rem;
+    transition: var(--mainTransition);
+    color: var(--blue);
+}
+.fa-edit:hover{
+    font-size: 1.5rem;
+}
+.parcel_action{
+    margin-top: 0.90rem;
+    position: absolute;
+    right: 0;
+    padding: 0.5rem;
+    background: #cecece;
+    border-top-left-radius: 5px;
+}
+.tag{
+    padding-bottom: 0.2rem;
+    font-family:'Quicksand', sans-serif;;
+}
+/***************************dashboard section************************************* */
 
-/***************************end of Qoute section************************************* */
+/***************************cancel section************************************* */
+.cancel_order{
+    margin: 3rem;
+    padding:1.5rem;
+    background: #cecece;
+    box-shadow: 1px 3px 5px 1px #013f7e;
+    float: left;
+    width: 50%;
+    border-radius: 10px;
+}
+.cancel_order h2 {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Quicksand',
+    sans-serif;
+    text-transform: capitalize;
+}
+.cancel_order h4 {
+    padding: 0.5rem;
+    text-align: center;
+}
+.cancel_order h4 a {
+    font-size:1.5rem;
+    color: var(--blue);
+    padding-right: 0.2rem;
+}
+.confirmDelete{
+     border-radius: 0.5rem;
+     padding: 7px;
+     background: var(--orange);
+     color: var(--black);
+     font-size: 1.2rem;
+     font-family: 'Quicksand',
+     sans-serif;
+     box-shadow: 1px 3px 5px 1px #013f7e;
+     outline: none;
+     border: none;
+     cursor: pointer;
+}
+
+/***************************end cancel section************************************* */
+
+/***************************update section************************************* */
+.update_order{
+     margin: 3rem;
+     padding:1.5rem;
+     background: #cecece;
+     box-shadow: 1px 3px 5px 1px #013f7e;
+     float: left;
+     width: 50%;
+     border-radius: 10px;
+}
+.update_order h2 {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Quicksand',
+        sans-serif;
+    text-transform: capitalize;
+}
+.update_form{
+    text-align: center;
+}
+.update_label{
+    font-size: 1rem;
+    font-family: 'Quicksand',
+    sans-serif;
+    text-transform: capitalize;
+}
+.newInput{
+    padding: 0.7rem;
+    width: 50%;
+    margin:0.5rem;
+    outline: none;
+    border: var(--orange) 1px solid;
+    border-radius: 10px;;
+}
+.updateBtn{
+     border-radius: 0.5rem;
+     margin: 0.5rem;
+     padding: 7px;
+     background: var(--orange);
+     color: var(--black);
+     font-size: 1.2rem;
+     font-family: 'Quicksand',
+     sans-serif;
+     box-shadow: 1px 3px 5px 1px #013f7e;
+     outline: none;
+     border: none;
+     cursor: pointer;
+}
+
+
+/***************************update section************************************* */
+
+/***************************detail section************************************* */
+.detail_order{
+     margin: 3rem;
+     padding:1.5rem;
+     background: #cecece;
+     box-shadow: 1px 3px 5px 1px #013f7e;
+     float: left;
+     width: 50%;
+     border-radius: 10px;
+}
+.detail_order h2 {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Quicksand',
+        sans-serif;
+    text-transform: capitalize;
+}
+.detail_form{
+     text-align: center;
+}
+.detail_label{
+     font-size: 1rem;
+     font-family: 'Quicksand',
+     sans-serif;
+     text-transform: capitalize;
+}
+
+/***************************end of detail section************************************* */
 
 /*******************first footer**************************** */
 .firstfooter {

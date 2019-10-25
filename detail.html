@@ -5,72 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tracker.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <title>Document</title>
+    <title>sendIT | detail</title>
 </head>
 
 <body>
     <!-- ---------------------navbar section---------------------------------- -->
     <nav class="navbar">
         <div class="nav_center">
-            <a href="index.html">
+            <a href="create_Order.html">
                 <h2 class="nav-title">SendIT</h2>
             </a>
             <div class="nav_ul">
                 <ul class="nav_links">
-                    <li class="nav_link"><a href="Quote.html">Quote</a></li>
                     <li class="nav_link"><a href="tracker.html">Track a parcel</a></li>
+                    <li class="nav_link"><a href="create_Order.html">create parcel</a></li>
                 </ul>
             </div>
             <div class="admins">
-                <!-- <a href="/UI/login.html"><span class="login">Login</span></a> -->
-                <a href="signup.html"><span class="signup">Sign Up</span></a>
-                <a href="profile.html"><span class="signup">profile</span></a>
-
+                <a href="Usersignin.html"><span class="login">Log out</span></a>
             </div>
         </div>
-        <a href="#"><span class="basket">Basket</span></a>
-        <span><i class="fa fa-shopping-basket"></i></span>
-        <div class="bask_num">(0)</div>
     </nav>
     <!-- --------------------- end of navbar section---------------------------------- -->
 
-    <!-- --------------------- login section---------------------------------- -->
-    <section class="loginpage">
-        <div class="session">
-            <div class="signupShortcut">
-                <span class="signuptitle"><a href="signup.html">Sign Up</a></span>
-                <!-- <h4>Delivery updates and offers, especially for you.</h4> -->
-            </div>
 
-            <div class="loginsession">
-                <div class="loginform">
-                    <h2 class="login-title">log in</h2>
-                    <form id="login">
-                        <p id="error"></p>
-                        <span class="emaildiv">
-                            <span class="env"><i class="fas fa-envelope"></i></span>
-                            <input type="email" id="email" placeholder="email"><br>
-                        </span>
-                        <span class="passworddiv">
-                            <span class="key"><i class="fas fa-key"></i></span>
-                            <input type="password" placeholder="password" id="password">
-                        </span><br>
-                        <span class="forgetpass"><a href="">Oops, forgot my password</a></span><br>
-                        <button class="btn-login"><a href="#"></a> Login</button>
-                    </form>
-                </div>
-            </div>
+    <!----------------------- detail section---------------------------------- -->
+    <section class="profilesession">
+
+        <div class="parcel_action">
+            <h5 class="tag">To cancel a specific Parcel Order click <a href="cancel_oder.html"></a><i
+                    class="far fa-trash-alt"></i></h4>
+                <h5 class="tag">To update a specific Parcel Order destination click <a href="update.html"></a><i
+                        class="fas fa-edit"></i></h4>
+                    <h5 class="tag">To check parcel details click <a href="#">Ref no:</a></h4>
+        </div>
+
+         <div class="detail_order">
+             <h2> Your parcel</h2>
+             <form action="" class="detail_form">
+                 <label for="" class="detail_label">Your pick-up location:</label><br>
+                 <input type="text" class="newInput" disabled name=Location><br>
+                 <label for="" class="detail_label">Your Destination:</label><br>
+                 <input type="text" class="newInput" disabled name="destination"><br>
+                <label for="" class="detail_label">Your Estimated price:</label><br>
+                <input type="text" class="newInput" disabled name="price"><br><br>
+                <label for="" class="detail_label">Order status:</label><br>
+                <input type="radio" name="status" disabled value="cancelled"> Cancel
+                <input type="radio" name="status" disabled value="ontransit" checked> On Transit
+                <input type="radio" name= "status" disabled value="delivered">Delivered <br><br>
+
+
+                <span class="reference"><a href="update.html"><i class="fas fa-edit"></i></a></span>
+                 <span class="reference"><a href="cancel_oder.html"><i class="far fa-trash-alt"></i></a></span>
+                
+                
+             </form>
+         </div>
+
+
+
+        
     </section>
+
+
+
+
+
+    <!-- --------------------- end of detail section---------------------------------- -->
 
     <!-----------------------------first footer----------------------------->
     <section class="firstfooter">
         <div class="firstfooters">
             <div class="heading">
                 <h3 class="sendingparcel">Send a parcel</h3>
-                <span class="itemOne"><a href="#">make a shipment</a></span>
-                <span class="itemOne"><a href="#">Get a quote</a></span>
                 <span class="itemOne"><a href="#">My Account</a></span>
 
             </div>
@@ -103,9 +112,6 @@
         <h4 class="address">Third Floor, The Union, Albert Square, Manchester M2 6LW</h4>
     </section>
     <!-----------------------------end footer----------------------------->
-
-    
-    <script src="src/login.js"></script>
 </body>
 
 </html>

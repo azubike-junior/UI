@@ -7,47 +7,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="tracker.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <title>sendIT | profile</title>
+    <title>sendIT | Admin detail</title>
 </head>
 
 <body>
     <!-- ---------------------navbar section---------------------------------- -->
     <nav class="navbar">
         <div class="nav_center">
-            <a href="create_Order.html">
+            <a href="admin.html">
                 <h2 class="nav-title">SendIT</h2>
             </a>
             <div class="nav_ul">
                 <ul class="nav_links">
-                    <li class="nav_link"><a href="create_Order.html">create a new parcel</a></li>
-                    <li class="nav_link"><a href="tracker.html">Track a parcel</a></li>
+                    <li class="nav_link"><a href="admin_detail.html">details</a></li>
                 </ul>
             </div>
             <div class="admins">
-                <a href="Usersignin.html"><span class="login">Log out</span></a>
+                 <a href="admin_signin.html"><span class="login">Log out</span></a>
             </div>
         </div>
     </nav>
-<!-- --------------------- end of navbar section---------------------------------- -->
-    
+    <!-- --------------------- end of navbar section---------------------------------- -->
 
-<!----------------------- profile section---------------------------------- -->
-<section class="profilesession">
-     
-    <div class="profile">
-        <div class="parcelstuffs">
-            <span class="parce"><a href="">parcels delivered <i class="fas fa-sort-down"></i></i></a></span>
-            <span><a href="">parcels to be delivered <i class="fas fa-sort-down"></i></a></span>
-            <span><a href="">list of orders <i class="fas fa-sort-down"></i></a></span>
+    <!----------------------- detail section---------------------------------- -->
+    <section class="profilesession">
+
+        <div class="parcel_action">
+            <h5 class="tag">To cancel a specific Parcel Order click <a href="cancel_oder.html"></a><i
+                    class="far fa-trash-alt"></i></h4>
+                <h5 class="tag">To update a specific Parcel Order destination click <a href="update.html"></a><i
+                        class="fas fa-edit"></i></h4>
         </div>
-        <div class="workspace">
-            <h4 class="orderresponse">No parcel delivery order has been made yet</h4>
+
+        <div class="detail_order">
+            <h2>All Available Orders</h2>
+            <div class="detail_form">
+                <h4 class="reference"><a href="admin_detail.html" title="Check details">Order Ref no:</a></h4>
+
+            </div>
         </div>
-    </div>
-</section>
 
 
-<!-- --------------------- end of profile section---------------------------------- -->
+
+
+    </section>
+
+
+
+
+
+    <!-- --------------------- end of detail section---------------------------------- -->
+
+
     <!-----------------------------footer----------------------------->
     <section class="footer">
         <div class="footers">

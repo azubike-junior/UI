@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tracker.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>sendIT | Admin detail</title>
+</head>
+
+<body>
+    <!-- ---------------------navbar section---------------------------------- -->
+    <nav class="navbar">
+        <div class="nav_center">
+            <a href="admin.html">
+                <h2 class="nav-title">SendIT</h2>
+            </a>
+            <div class="nav_ul">
+                <ul class="nav_links">
+                    <li class="nav_link"><a href="admin_detail.html">details</a></li>
+                </ul>
+            </div>
+            <div class="admins">
+                <a href="admin_signin.html"><span class="login">Log out</span></a>
+            </div>
+        </div>
+    </nav>
+    <!-- --------------------- end of navbar section---------------------------------- -->
+
+    <!----------------------- detail section---------------------------------- -->
+    <section class="profilesession">
+
+        <div class="parcel_action">
+            <h5 class="tag">To cancel a specific Parcel Order click <a href="cancel_oder.html"></a><i
+                    class="far fa-trash-alt"></i></h4>
+                <h5 class="tag">To update a specific Parcel Order destination click <a href="update.html"></a><i
+                        class="fas fa-edit"></i></h4>
+        </div>
+
+        <div class="detail_order">
+            <h2>Order</h2>
+            <form action="" class="detail_form">
+                <label for="" class="detail_label">client pick-up location:</label><br>
+                <input type="text" class="newInput" disabled name=Location><br>
+                <label for="" class="detail_label">client Destination:</label><br>
+                <input type="text" class="newInput" disabled name="destination"><br>
+                <label for="" class="detail_label">Change Present Location</label><br>
+                <input type="text" class="newInput"  placeholder="enter new location"><br><br>
+                <label for="" class="detail_label">Order status:</label><br>
+                <input type="radio" name="status"  value="cancelled"> Cancel
+                <input type="radio" name="status"  value="ontransit" checked> On Transit
+                <input type="radio" name="status"  value="delivered">Delivered <br>
+                <button type="submit" class="updateBtn">update Parcel</button><br><br>
+
+                <span class="reference">Order Ref no:<a href="#"><i class="far fa-trash-alt"></i></a></span>
+
+
+            </form>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <!-- --------------------- end of detail section---------------------------------- -->
+
+   
+    <!-----------------------------footer----------------------------->
+    <section class="footer">
+        <div class="footers">
+            <span><a href="" footer class="footerItem">private policy</a></span>
+            <span><a href="" class="footerItem">cookie policy</a></span>
+            <span><a href="" class="footerItem">Terms and condition</a></span>
+            <span><a href="" class="footerItem">refund policy</a></span>
+            <span><a href="" class="footerItem">sitemap</a></span>
+        </div>
+        <h4 class="address">Third Floor, The Union, Albert Square, Manchester M2 6LW</h4>
+    </section>
+    <!-----------------------------end footer----------------------------->
+</body>
+
+</html>

@@ -7,31 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <title>Document</title>
+    <title>sendIT | create Parcel</title>
 </head>
 
 <body>
     <!-- ---------------------navbar section---------------------------------- -->
     <nav class="navbar">
         <div class="nav_center">
-            <a href="index.html">
+            <a href="create_Order.html">
                 <h2 class="nav-title">SendIT</h2>
             </a>
             <div class="nav_ul">
                 <ul class="nav_links">
-                    <li class="nav_link"><a href="Quote.html">Quote</a></li>
+                    <li class="nav_link"><a href="dashboard.html">view Orders</a></li>
                     <li class="nav_link"><a href="tracker.html">Track a parcel</a></li>
                 </ul>
             </div>
             <div class="admins">
                 <a href="profile.html"><span class="signup">profile</span></a>
-
+                <a href="Usersignin.html"><span class="login">Log out</span></a>
 
             </div>
         </div>
-        <a href="#"><span class="basket">Basket</span></a>
-        <span><i class="fa fa-shopping-basket"></i></span>
-        <div class="bask_num">(0)</div>
     </nav>
     <!-- --------------------- end of navbar section---------------------------------- -->
 
@@ -39,18 +36,14 @@
     <section class="banner_section">
         <div class="banner">
             <form action="">
-                <label for="">From:</label>
-                <input type="text" class="place">
-                <input type="text" placeholder="Postcode" class="postcode">
-                <label for="">To:</label>
-                <input type="text" placeholder="" class="to">
-                <input type="text" placeholder="Postcode" class="postcode"><br><br>
-                <label for="">Parcel:</label>
-                <input type="text" class="length" placeholder="length">
-                <input type="text" class="width" placeholder="width">
-                <input type="text" class="height" placeholder="height">
-                <input type="text" class="cm" placeholder="cm" readonly>
-                <input type="text" placeholder="weight" class="weight">
+                <label for="">Parcel Name:</label>
+                <input type="text" class="place" placeholder="enter parcel name">
+                <label for="">Weight in kg:</label>
+                <input type="number" placeholder="weight" class="weight">
+                <label for="">Pick-up Location:</label>
+                <input type="text" class="length" placeholder="enter Pick-up Location"><br><br>
+                <label for="">Destination:</label>
+                <input type="text" placeholder="enter destination" class="to">
             </form><br>
             <hr>
             <br>
